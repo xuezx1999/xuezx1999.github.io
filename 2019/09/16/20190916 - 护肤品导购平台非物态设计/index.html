@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.0.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xuezx1999.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="本文为《非物态设计》课程小组合作作业，本人所在的小组以护肤品选购为研究主题，通过非物态设计的方式解决护肤品选购困难的问题。下文分别呈现项目书及课堂回报逐字稿和前置调研资料文本，本人在该课程中主要负责资料调研、逻辑整理、UI设计和PPT制作及汇报，项目书PPT中插图为小组成员王琦完成，图标、图表和调研资料整理自网络。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="护肤品导购平台非物态设计">
+<meta property="og:url" content="https://xuezx1999.github.io/2019/09/16/20190916%20-%20%E6%8A%A4%E8%82%A4%E5%93%81%E5%AF%BC%E8%B4%AD%E5%B9%B3%E5%8F%B0%E9%9D%9E%E7%89%A9%E6%80%81%E8%AE%BE%E8%AE%A1/index.html">
+<meta property="og:site_name" content="薛志翔">
+<meta property="og:description" content="本文为《非物态设计》课程小组合作作业，本人所在的小组以护肤品选购为研究主题，通过非物态设计的方式解决护肤品选购困难的问题。下文分别呈现项目书及课堂回报逐字稿和前置调研资料文本，本人在该课程中主要负责资料调研、逻辑整理、UI设计和PPT制作及汇报，项目书PPT中插图为小组成员王琦完成，图标、图表和调研资料整理自网络。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813121540.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122004.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122014.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122021.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122044.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122053.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122120.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122125.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122132.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122140.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122158.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122205.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122210.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122217.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122225.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122233.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122241.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122248.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122256.jpg">
+<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122306.jpg">
+<meta property="article:published_time" content="2019-09-16T01:11:00.000Z">
+<meta property="article:modified_time" content="2020-08-13T04:27:54.026Z">
+<meta property="article:author" content="Joshua XUE">
+<meta property="article:tag" content="调研">
+<meta property="article:tag" content="设计">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813121540.jpg">
+
+<link rel="canonical" href="https://xuezx1999.github.io/2019/09/16/20190916%20-%20%E6%8A%A4%E8%82%A4%E5%93%81%E5%AF%BC%E8%B4%AD%E5%B9%B3%E5%8F%B0%E9%9D%9E%E7%89%A9%E6%80%81%E8%AE%BE%E8%AE%A1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>护肤品导购平台非物态设计 | 薛志翔</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">薛志翔</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xuezx1999.github.io/2019/09/16/20190916%20-%20%E6%8A%A4%E8%82%A4%E5%93%81%E5%AF%BC%E8%B4%AD%E5%B9%B3%E5%8F%B0%E9%9D%9E%E7%89%A9%E6%80%81%E8%AE%BE%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Joshua XUE">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="薛志翔">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          护肤品导购平台非物态设计
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-16 09:11:00" itemprop="dateCreated datePublished" datetime="2019-09-16T09:11:00+08:00">2019-09-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-13 12:27:54" itemprop="dateModified" datetime="2020-08-13T12:27:54+08:00">2020-08-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BD%9C%E4%B8%9A/" itemprop="url" rel="index"><span itemprop="name">作业</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813121540.jpg"></p>
+<blockquote>
+<p>本文为《非物态设计》课程小组合作作业，本人所在的小组以护肤品选购为研究主题，通过非物态设计的方式解决护肤品选购困难的问题。下文分别呈现项目书及课堂回报逐字稿和前置调研资料文本，本人在该课程中主要负责资料调研、逻辑整理、UI设计和PPT制作及汇报，项目书PPT中插图为小组成员王琦完成，图标、图表和调研资料整理自网络。</p>
+</blockquote>
+<a id="more"></a>
+
+<hr>
+<h1 id="「护个肤」项目计划书"><a href="#「护个肤」项目计划书" class="headerlink" title="「护个肤」项目计划书"></a>「护个肤」项目计划书</h1><p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122004.jpg"></p>
+<p>我们小组所做的内容是护肤品导购平台设计。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122014.jpg"></p>
+<p>在我们的日常生活体验中，我们常常会遇到护肤品难以挑选的困境。市面上的护肤产品种类繁多，广告花样令人眼花缭乱，很多人不知道如何更好的选购护肤品。或者，即使买到了护肤品，也不知道如何正确的使用护肤品。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122021.jpg"></p>
+<p>我们从这两点问题出发，进行了一个小组调查供参考，最后得出的一些结论是超过半数的用户不知道自己需要什么护肤品，绝大多数用户表示护肤品品类过多难以选择，超过半数的人不了解护肤品的常见功效。对于护肤品的广告来说，绝大多数人不信任厂商的营销；以及超过半数的人表示，在购买护肤品时，成分表能够起到帮助作用。</p>
+<p>通过这个问卷调查，一方面我们了解到了大家对于护肤品的选购和使用的确存在一些问题，同时我们也发现了在选购护肤品时，成分表可以帮助大家更好的选购，即所谓的“成分党”还是有市场基础的。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122044.jpg"></p>
+<p>我们归结了我们最先提出的问题及问卷调查的数据，最后确定我们的系统设计方向，即我们希望通过一个APP这样的平台型产品，构建“科学护肤”的价值体系，而科学护肤的体系可以从科学的认识护肤品成分及功效和科学的使用护肤品来组成。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122053.jpg"></p>
+<p>为了进一步验证“科学护肤”的市场需求，我们寻找了一些更有数据来印证我们的想法。首先是美国知名天然护肤品品牌karigran于2017年在美国境内所做的一个关于护肤品成分及天然成分的调查，有超过2000名的女性消费者参与了此次调查，结果显示超过六成以上的用户在购买产品前会阅读标签，并表示阅读标签会帮助他们购买产品。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122120.jpg"></p>
+<p>香港贸易发展局是致力于全球贸易推广的公营机构，他们在2016针对中国大陆地区的护肤品市场，分别做了一系列的商业调查报告。我们截取了其中两个调查报告，其中《中国女性对护肤品需求的特征》这一报告中重要的两点结论有，新一代女性更早建立科学护肤的概念，女性消费者在购买时主要考虑的因素是：产品的品质、成分和性价比。而对于男性而言，年轻男士逐渐养成护肤的习惯、年轻男士最注重护肤品的细分功效。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122125.jpg"></p>
+<p>综合以上所有的内容，我们的总结是，近年来，对于护肤品而言，消费者的需求在升级，消费者开始注重产品的安全性、个性化、透明化、性价比；大家选购护肤品的策略也发生了变化，更注重科学理性的购买。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122132.jpg"></p>
+<p>消费者对于护肤品的消费观念在升级，同时科学护肤需求的潜在用户规模较大。这足以印证我们所做的护肤品导购系统平台存在的可能性。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122140.jpg"></p>
+<p>所以我们将我们所要设计的导购平台取名为“护个肤”，核心产品就是移动端手机端的应用程序。之所以称作平台，就是我们希望我们的平台能够由工具、社区、电商等多种形态组合而成——</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122158.jpg"></p>
+<p>——围绕科学护肤的理念，从了解肤质、选购护肤品、使用护肤品三个大步骤逐一击破消费者的痛点和需求点。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122205.jpg"></p>
+<p>首先在了解肤质这一步骤，我们以摄像头测肤工具的形态帮助消费者了解自己的皮肤状况。我们可以通过自主研发AI系统，或调用第三方服务，或与第三方测肤硬件进行合作，对用户的皮肤状况进行分析，提供给用户全方位肤质报告供参考。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122210.jpg"></p>
+<p>用户只需要使用自己的手机摄像头，根据自己的提示对准自己的脸进行拍照，通过算法的分析最终提供给用户全方位的肤质情况报告及评分，并可以结合下一步护肤品查询工具为用户匹配合适的护肤品。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122217.jpg"></p>
+<p>护肤品查询工具针对的是科学护肤的第二步，即选购护肤品。通过我们自建护肤品的数据库，用户可以拍摄产品照片、根据名称查询以及输入商品条码查询到对应的护肤品，并通过可视化的设计，为用户提供成分分析、安全提醒及肤质匹配等购买建议。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122225.jpg"></p>
+<p>可视化设计的整体理念和手段是化繁为简，帮助大家更好的成为“成分党”。因为现在的护肤品厂商喜欢用各种概念性的营销来蛊惑消费者的购买，但其实护肤品的有效成分其实非常的容易学习。我们将传统的成分表转为清晰有效的可视化表达，让用户一目了然。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122233.jpg"></p>
+<p>对于使用护肤品而言，我们希望建设一个社区，由皮肤医疗从业者、KOL及媒体、厂商及品牌房等构成，为用户提供护肤科普、护肤咨询、产品评测、产品资讯等内容。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122241.jpg"></p>
+<p>因为护肤品是全年龄人群都需要使用的，但是我们主要针对的用户人群还是以崇尚科学理性护肤的，具有一定学历水平的年轻群体。他们更有成为“成分党”的潜力，同时他们也能构建更好的社区氛围。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122248.jpg"></p>
+<p>之前介绍我们的平台构成里面还有电商，但是加入电商是一件非常有风险的事情。我们需要在工具和社区这两个形态构建完成、成熟，并积累了大量稳定的用户群体之后，才可以逐步的加入电商销售。我们可以除了考虑自营商品之外，还可以与一些品牌房联名推出产品，这样才能更好的打造我们自己的品牌形象。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122256.jpg"></p>
+<p>最后是我们的项目计划，前期我们计划用3个月左右的时间，通过微博、微信公众号等新媒体运营积累用户，同时进行移动端应用程序的小范围内测，还可以考虑媒体及KOL合作，在果壳、知乎、豆瓣等社区进行广告、软文的植入。</p>
+<p>在培养一定的用户群体之后，第4~5个月就可以上线我们的移动端应用程序，同步的我们自己平台内的社区要开始运营，创造PGC、OGC、UGC等多维的内容模式。<br>在平台稳定、见刊的运行之后，我们才可以考虑电商的试运营。</p>
+<p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200813122306.jpg"></p>
+<p>以上就是我们平台的所有介绍内容。</p>
+<hr>
+<h1 id="护肤品导购平台设计调研资料"><a href="#护肤品导购平台设计调研资料" class="headerlink" title="护肤品导购平台设计调研资料"></a>护肤品导购平台设计调研资料</h1><h2 id="一、项目缘起"><a href="#一、项目缘起" class="headerlink" title="一、项目缘起"></a>一、项目缘起</h2><p>在日常生活体验中，我们常常会遇到护肤品难以挑选的困境。市面上的护肤产品种类繁多，广告花样令人眼花缭乱，很多人不知道如何更好的选购护肤品。或者，即使买到了护肤品，也不知道如何正确的使用护肤品。</p>
+<h3 id="1-化妆品的历史溯源"><a href="#1-化妆品的历史溯源" class="headerlink" title="1.化妆品的历史溯源"></a>1.化妆品的历史溯源</h3><p>小组成员最初的立意是针对化妆品而言的，其后才明确了护肤品的范围和界限。在此，也陈列对于化妆品的历史溯源资料。小组成员试图寻找历史上的人们对于化妆品是否有存在难以选择的现象，不过就目前我们收集到的资料而言，似乎没有可考据的资料有显示这样的情况。</p>
+<h4 id="1-1欧洲古代的化妆品"><a href="#1-1欧洲古代的化妆品" class="headerlink" title="1.1欧洲古代的化妆品"></a>1.1欧洲古代的化妆品</h4><p>最初人们使用化妆品是为了保护身体免受自然界的伤害,达到保温、避光、防虫的目的,或是出于宗教的原因在身上涂上颜色,防灾避难。公元前5世纪到公元7世纪期间,已有不少关于制作和使用化妆品的记载。约在公元300年,意大利罗马理发店已开始使用香水,那不勒斯地区成为芳香业的中心。公元1世纪至2世纪,希腊物理学家格林将玫瑰花水加到蜂蜡和橄榄油中,经搅拌调和后,得到一种很不稳定的乳膏状物。直到1690年, Vomacka在其中加入硼砂后,才首次得到现在被称为“香脂”的稳定的乳化膏体。最早制出发蜡的是古埃及人,人们在硬石板上涂抹牛油,将芬芳的花瓣撒布在牛油上,花香渗入到牛油中,以此制得香发蜡,而用酒精冲洗发蜡,香气进入酒精便制得香水。公元7世纪至公元12世纪,阿拉伯人首先采用蒸馏提取技术制备了香精。</p>
+<p>14世纪至16世纪,随着欧洲文艺复兴带来的文化繁荣,人们对化妆品的需求也越来越迫切。以后随着工业革命的深人发展,化妆品开始从医药中分离出来,逐渐成为单独的工业领域,而近代迅速崛起的油脂工业、香料工业、化工原料工业、有机合成工业为化妆品工业奠定了扎实的基础,也为现代化妆品工业的迅猛发展创造了有利条件。我国是文明古国,化妆品的生产和使用有着悠久的历史,在古籍《汉书》中就有画眉、点唇的记载。《齐民要术》中介绍了有丁香芬芳的香粉。晋朝张华所著《博物志》,便有“纣烧铅作粉”涂面而美容的记述。后唐《中华古今注》有胭脂的记载:“起自纣,以红兰花汁凝成”,产自燕国,故称燕脂。历代帝王宫中,讲求美容玉面,不乏使用多种美容品</p>
+<h4 id="1-2我国的化妆品发展"><a href="#1-2我国的化妆品发展" class="headerlink" title="1.2我国的化妆品发展"></a>1.2我国的化妆品发展</h4><p>我国化妆品工业的发展，经历了漫长的过程。早在南宋(1127~ 1279年)时，杭州已成为生产化妆品的重要基地，杭州生产的化妆用脂粉，被称为“杭粉”，久负盛名，到明末清切时更远销日本。杭粉以浙江诸暨、湖州所产滑石，广州所产铅华为原料，配以珠兰、玫瑰、蔷薇等多种香料制成，清同治元年(1862年)，杭州清河坊富绅孔传鸿创建孔凤春香粉号，生产鹅蛋粉、水粉、扑粉、雪花粉等，是我国最早的化妆品工业之一。与杭州孔凤春香粉齐名的是扬州谢馥春香号，由谢宏业创建于清道光九年(1830年)，生产的化妆品有香佩、香囊、香板、香珠及宫粉、水粉、胭脂、桂花油等。</p>
+<p>粉在古代又叫粉英，主要原材料是米。就是我们平常吃的大米了。不要奇怪，米除了吃确实可以用来护肤的。《齐民要术》中详细记载了其制作方法，非常的繁琐复杂。简单点说就是先把米泡一个月，然后研磨成特别细的粉末。然后把粉末继续泡上水，静置一段时间后撇去上面的清水。只留下比较浓稠的部分，然后用棍子沿着一个方向搅动至少三百圈。之后再密封到罐子里，放一段时间再撇去上面的清水。然后在剩下的米汁上铺棉布，撒上草木灰把水吸干。反复取出湿掉的草木灰，然后再撒上新的直至彻底吸干水分。到这里就做成了半成品，放到太阳下晒干再研磨一下就是成品的粉英了。据说护肤效果很好，摸到脸上非常光滑。还有些高级版的会在里面加点添加剂，比如油脂，花蜜什么的。如果你觉得古人的护肤品不过如此，那你就错了。</p>
+<p>《齐民要术》中还记载了一种东西，是古代的润肤露。这种东西叫面脂。主要材料是牛骨髓和牛油脂。然后加入丁香、白芷等好几种中药做成的。不光护肤效果好，抹到脸上还香香的。</p>
+<p>基本上现在主要用的化妆品和护肤品，在古代都有对应的类似产品。比如香水，在古代就有一种叫香泽的东西功能类似。现在有唇膏，在古代也有唇脂。不过古代的唇脂更主要的功能是防止嘴唇干裂，就像现在到了冬天也有很多人用的润唇膏。</p>
+<p>《齐民要术》这本书里面就记载了两种洗面奶，太真红王膏和孙仙少女膏。</p>
+<p>到了民国时期，1915年，谢馥春香号的香佩、香囊和宫粉，曾荣获巴拿马万国博览会的银质奖章。足见当时我国的化妆品工业已具有较高的水平，在国际上已占有一定的地位。</p>
+<p>进入本世纪后，我国的化妆品工业有了长足的发展。1905年，香港创办了化妆品专业工厂广生行，开始生产双妹牌花露水，以后陆续在上海、广州、营口等地建厂，生产双妹牌雪花膏、如意油、如意膏等化妆品。广生行是我国率先从作坊生产发展到采用机械化生产化妆品的工厂。1916年广生行的双妹牌化妆品在美国赛会上荣获金奖。1911年中国化学工业社在上海建立，该厂即为上海牙膏厂的前身。1913年在上海又建立了中华化妆品厂，以后又相继建立了上海明星花露水厂、上海家庭工业社、富贝康化妆品厂、宁波凤苞化妆品厂等，使我国的化妆品工业逐渐形成了一定的规模。</p>
+<p>1949年以前，化妆品多是达官贵人所用，生产还多是手工作坊，把化妆品视作“奢侈品”。真正得到发展，还是近十余年，随着中国改革开放，化妆品获得了发展的机遇。</p>
+<h3 id="2-小组调查"><a href="#2-小组调查" class="headerlink" title="2.小组调查"></a>2.小组调查</h3><p>基于消费者对于护肤品难以选择的情况，项目小组进行了一个小规模的问卷调查以供参考，最后得出的一些结论是超过半数的用户不知道自己需要什么护肤品，绝大多数用户表示护肤品品类过多难以选择，超过半数的人不了解护肤品的常见功效。对于护肤品的广告来说，绝大多数人不信任厂商的营销；以及超过半数的人表示，在购买护肤品时，成分表能够起到帮助作用。</p>
+<p>通过这个问卷调查，一方面我们了解到了大家对于护肤品的选购和使用的确存在一些问题，同时也发现了在选购护肤品时，成分表可以帮助大家更好的选购，即所谓的“成分党”还是有市场基础的。</p>
+<h3 id="3-“科学护肤”的提出"><a href="#3-“科学护肤”的提出" class="headerlink" title="3.“科学护肤”的提出"></a>3.“科学护肤”的提出</h3><p>结合生活经验以及一些调查访问结果，小组成员提出了构建“科学护肤”价值体系的想法，而科学护肤的体系可以从科学的认识护肤品成分及功效和科学的使用护肤品来组成。为了进一步明确此项目的研究对象，小组成员也考察了与护肤品（以及包含护肤品在内的更广泛的“化妆品”）相关的科学研究和国家相关的法律法规。</p>
+<h3 id="4-护肤品的界定"><a href="#4-护肤品的界定" class="headerlink" title="4.护肤品的界定"></a>4.护肤品的界定</h3><p>根据相关的国家标准定义，化妆品是以涂抹、洒、喷或其他类似方式，施于人体表面任何部位（皮肤、毛发、指/趾甲、口唇等），以达到清洁、芳香、改变外观、修正人体气味、保养、保持良好状态目的的产品。化妆品主要可以分为清洁类化妆品、护肤类化妆品和美容/修饰化妆品，因清洁类化妆品在身体皮肤上不会停留过长的时间，故基本上没有很多的安全隐患，不在“科学护肤”的研究范畴之内；而美容/修饰类化妆品，不是用于基本的皮肤护理功能，更多的是出于人们的美学喜好和审美趣味自主选用，故也不在“科学护肤”的研究范畴之内。护肤类化妆品是出于保护皮肤、护理皮肤，使皮肤保持和呈现更加健康的状态，它在某种程度上能够算是一种必要的流程，护肤品也具有很重要的存在地位，每个人都需要使用护肤类化妆品。为了便于称呼，我们称之为“护肤品”。</p>
+<p>根据使用的部位，对于护肤品可以做以下的举例。</p>
+<p>-用于皮肤的护肤品：护肤膏（霜）、护肤乳液、化妆水、面膜、护肤啫喱、润肤油、按摩精油、按摩基础油、花露水、痱子粉、爽身粉等。<br>-用于毛发的护肤品：护发素、发乳、发油/发蜡、焗油膏、发膜、睫毛基底液、护发喷雾。<br>-用于指（趾）甲的护肤品：护甲水（霜）、指甲硬化剂、指甲护理油。<br>-用于口唇的护肤品：润唇膏、润唇啫喱、护唇液（油）。</p>
+<h3 id="5-系统模型的呈现"><a href="#5-系统模型的呈现" class="headerlink" title="5.系统模型的呈现"></a>5.系统模型的呈现</h3><p>结合时下最流行的方式，项目小组成员希望通过一个APP或其他的互联网传播形式构建一个平台型产品，提供一系列“科学护肤”方面的服务，从而传递和普及“科学护肤”的观念。</p>
+<h2 id="二、市场需求"><a href="#二、市场需求" class="headerlink" title="二、市场需求"></a>二、市场需求</h2><p>为了进一步验证“科学护肤”的市场需求，小组成员寻找了一些更有数据来印证上述的想法。</p>
+<ul>
+<li><p>karigran的调查：首先是美国知名天然护肤品品牌karigran于2017年在美国境内所做的一个关于护肤品成分及天然成分的调查，有超过2000名的女性消费者参与了此次调查，结果显示超过六成以上的用户在购买产品前会阅读标签，并表示阅读标签会帮助他们购买产品。</p>
+</li>
+<li><p>香港贸发局调查：香港贸易发展局是致力于全球贸易推广的公营机构，他们在2016针对中国大陆地区的护肤品市场，分别做了一系列的商业调查报告。我们截取了其中两个调查报告，其中《中国女性对护肤品需求的特征》这一报告中重要的两点结论有，新一代女性更早建立科学护肤的概念，女性消费者在购买时主要考虑的因素是：产品的品质、成分和性价比。而对于男性而言，年轻男士逐渐养成护肤的习惯、年轻男士最注重护肤品的细分功效。</p>
+</li>
+</ul>
+<p>综合以上所有的内容，我们的总结是，近年来，对于护肤品而言，消费者的需求在升级，消费者开始注重产品的安全性、个性化、透明化、性价比；大家选购护肤品的策略也发生了变化，更注重科学理性的购买。</p>
+<p>消费者对于护肤品的消费观念在升级，同时科学护肤需求的潜在用户规模较大。这足以印证我们所做的护肤品导购系统平台存在的可能性。</p>
+<h2 id="三、平台方案"><a href="#三、平台方案" class="headerlink" title="三、平台方案"></a>三、平台方案</h2><p>我们将所要设计的导购平台取名为“护个肤”，核心产品就是移动端手机端的应用程序。之所以称作平台，就是希望我们的平台能够由工具、社区、电商等多种形态组合而成，围绕科学护肤的理念，从了解肤质、选购护肤品、使用护肤品三个大步骤逐一击破消费者的痛点和需求点。</p>
+<ul>
+<li>Step 1：了解肤质<ul>
+<li>首先在了解肤质这一步骤，我们以摄像头测肤工具的形态帮助消费者了解自己的皮肤状况。我们可以通过自主研发AI系统，或调用第三方服务，或与第三方测肤硬件进行合作，对用户的皮肤状况进行分析，提供给用户全方位肤质报告供参考。</li>
+<li>用户只需要使用自己的手机摄像头，根据自己的提示对准自己的脸进行拍照，通过算法的分析最终提供给用户全方位的肤质情况报告及评分，并可以结合下一步护肤品查询工具为用户匹配合适的护肤品。</li>
+</ul>
+</li>
+<li>Step 2：选购护肤品<ul>
+<li>护肤品查询工具针对的是科学护肤的第二步，即选购护肤品。通过我们自建护肤品的数据库，用户可以拍摄产品照片、根据名称查询以及输入商品条码查询到对应的护肤品，并通过可视化的设计，为用户提供成分分析、安全提醒及肤质匹配等购买建议。</li>
+<li>可视化设计的整体理念和手段是化繁为简，帮助大家更好的成为“成分党”。因为现在的护肤品厂商喜欢用各种概念性的营销来蛊惑消费者的购买，但其实护肤品的有效成分其实非常的容易学习。我们将传统的成分表转为清晰有效的可视化表达，让用户一目了然。</li>
+</ul>
+</li>
+<li>Step 3：使用护肤品<ul>
+<li>对于使用护肤品而言，我们希望建设一个社区，由皮肤医疗从业者、KOL及媒体、厂商及品牌房等构成，为用户提供护肤科普、护肤咨询、产品评测、产品资讯等内容。</li>
+</ul>
+</li>
+</ul>
+<p>因为护肤品是全年龄人群都需要使用的，但是我们主要针对的用户人群还是以崇尚科学理性护肤的，具有一定学历水平的年轻群体。他们更有成为“成分党”的潜力，同时他们也能构建更好的社区氛围。</p>
+<p>之前介绍我们的平台构成里面还有电商，但是加入电商是一件非常有风险的事情。我们需要在工具和社区这两个形态构建完成、成熟，并积累了大量稳定的用户群体之后，才可以逐步的加入电商销售。我们可以除了考虑自营商品之外，还可以与一些品牌方联名推出产品，这样才能更好的打造我们自己的品牌形象。</p>
+<h2 id="四、项目计划"><a href="#四、项目计划" class="headerlink" title="四、项目计划"></a>四、项目计划</h2><p>最后是我们的项目计划，前期我们计划用3个月左右的时间，通过微博、微信公众号等新媒体运营积累用户，同时进行移动端应用程序的小范围内测，还可以考虑媒体及KOL合作，在果壳、知乎、豆瓣等社区进行广告、软文的植入。</p>
+<p>在培养一定的用户群体之后，第4~5个月就可以上线我们的移动端应用程序，同步的我们自己平台内的社区要开始运营，创造PGC、OGC、UGC等多维的内容模式。</p>
+<ul>
+<li>PGC（Professional Generated Content），即专业生产内容，皮肤医疗专家一类的专业人士是主要群体，他们能够为社区带来权威的、可信赖的、科学的内容。</li>
+<li>OGC（Occupationally-generated Content），即职业生产内容。在护肤领域，有很多专业的用户在长期使用的过程中积累了相当的经验，尽管他们不足专业权威，但是他们能够针对具体产品进行分析，或者是进行更加贴近用户实际情况的科普，这类职业用户也能够为社区带来新鲜的内容。</li>
+<li>UGC（User Generated Content），即用户生产内容。一款护肤品的效果是因人而异的，而用户分享自己的对于某款产品的认知和使用经验，往往最具有参考价值。鼓励用户自主生产内容，能够保证社区的活跃程度。</li>
+</ul>
+<p>在平台稳定、健康的运行之后，我们才可以考虑电商的试运营。只有平台具备一定的人气，同时有一定的专业性和可靠性之后，引入电商的风险才能够降低，能够保证用户不会因为销售而导致对社区的不信赖。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%B0%83%E7%A0%94/" rel="tag"># 调研</a>
+              <a href="/tags/%E8%AE%BE%E8%AE%A1/" rel="tag"># 设计</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/06/20/20190620%20-%20%E8%8F%9C%E5%B8%82%E5%9C%BA%E7%9A%84%E6%9B%B4%E5%A4%9A%E5%8F%AF%E8%83%BD%E6%80%A7/" rel="prev" title="菜市场的更多可能性">
+      <i class="fa fa-chevron-left"></i> 菜市场的更多可能性
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/10/14/20191014%20-%20%E3%80%8A%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1%E4%B8%AD%E7%9A%84%E7%BD%91%E6%A0%BC%E7%B3%BB%E7%BB%9F%E3%80%8B%E8%AE%BE%E8%AE%A1%E7%B1%BB%E4%B9%A6%E7%B1%8D%E9%80%89%E9%A2%98%E5%88%86%E6%9E%90/" rel="next" title="《平面设计中的网格系统》设计类书籍选题分析">
+      《平面设计中的网格系统》设计类书籍选题分析 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%80%8C%E6%8A%A4%E4%B8%AA%E8%82%A4%E3%80%8D%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92%E4%B9%A6"><span class="nav-number">1.</span> <span class="nav-text">「护个肤」项目计划书</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%A4%E8%82%A4%E5%93%81%E5%AF%BC%E8%B4%AD%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E8%B0%83%E7%A0%94%E8%B5%84%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">护肤品导购平台设计调研资料</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BC%98%E8%B5%B7"><span class="nav-number">2.1.</span> <span class="nav-text">一、项目缘起</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%8C%96%E5%A6%86%E5%93%81%E7%9A%84%E5%8E%86%E5%8F%B2%E6%BA%AF%E6%BA%90"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.化妆品的历史溯源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1%E6%AC%A7%E6%B4%B2%E5%8F%A4%E4%BB%A3%E7%9A%84%E5%8C%96%E5%A6%86%E5%93%81"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">1.1欧洲古代的化妆品</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2%E6%88%91%E5%9B%BD%E7%9A%84%E5%8C%96%E5%A6%86%E5%93%81%E5%8F%91%E5%B1%95"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">1.2我国的化妆品发展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B0%8F%E7%BB%84%E8%B0%83%E6%9F%A5"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.小组调查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E2%80%9C%E7%A7%91%E5%AD%A6%E6%8A%A4%E8%82%A4%E2%80%9D%E7%9A%84%E6%8F%90%E5%87%BA"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.“科学护肤”的提出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%8A%A4%E8%82%A4%E5%93%81%E7%9A%84%E7%95%8C%E5%AE%9A"><span class="nav-number">2.1.4.</span> <span class="nav-text">4.护肤品的界定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%91%88%E7%8E%B0"><span class="nav-number">2.1.5.</span> <span class="nav-text">5.系统模型的呈现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B8%82%E5%9C%BA%E9%9C%80%E6%B1%82"><span class="nav-number">2.2.</span> <span class="nav-text">二、市场需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88"><span class="nav-number">2.3.</span> <span class="nav-text">三、平台方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92"><span class="nav-number">2.4.</span> <span class="nav-text">四、项目计划</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Joshua XUE</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joshua XUE</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
