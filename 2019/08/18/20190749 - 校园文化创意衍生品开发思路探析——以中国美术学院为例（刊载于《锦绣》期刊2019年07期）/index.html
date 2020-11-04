@@ -1,224 +1,127 @@
+
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.0.2">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/black/pace-theme-loading-bar.css">
-  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xuezx1999.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="基金项目：中国美术学院2019年大学生科技创新活动（暨新苗人才计划）项目名称：“大学望境”校园文化衍生品创意设计（专项课题）项目编号：T2019007发表情况：刊载于《锦绣》2019年07期（ISSN：1674-5140）龙源收录：http:&#x2F;&#x2F;www.qikan.com&#x2F;articleinfo&#x2F;sqwf20190749.html">
-<meta property="og:type" content="article">
-<meta property="og:title" content="校园文化创意衍生品开发思路探析——以中国美术学院为例（刊载于《锦绣》期刊2019年07期）">
-<meta property="og:url" content="https://xuezx1999.github.io/2019/08/18/20190749%20-%20%E6%A0%A1%E5%9B%AD%E6%96%87%E5%8C%96%E5%88%9B%E6%84%8F%E8%A1%8D%E7%94%9F%E5%93%81%E5%BC%80%E5%8F%91%E6%80%9D%E8%B7%AF%E6%8E%A2%E6%9E%90%E2%80%94%E2%80%94%E4%BB%A5%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2%E4%B8%BA%E4%BE%8B%EF%BC%88%E5%88%8A%E8%BD%BD%E4%BA%8E%E3%80%8A%E9%94%A6%E7%BB%A3%E3%80%8B%E6%9C%9F%E5%88%8A2019%E5%B9%B407%E6%9C%9F%EF%BC%89/index.html">
-<meta property="og:site_name" content="薛志翔">
-<meta property="og:description" content="基金项目：中国美术学院2019年大学生科技创新活动（暨新苗人才计划）项目名称：“大学望境”校园文化衍生品创意设计（专项课题）项目编号：T2019007发表情况：刊载于《锦绣》2019年07期（ISSN：1674-5140）龙源收录：http:&#x2F;&#x2F;www.qikan.com&#x2F;articleinfo&#x2F;sqwf20190749.html">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814032821.jpg">
-<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814000157.jpg">
-<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814000203.jpg">
-<meta property="og:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814000210.jpg">
-<meta property="article:published_time" content="2019-08-18T15:57:00.000Z">
-<meta property="article:modified_time" content="2020-08-15T15:51:15.410Z">
-<meta property="article:author" content="Joshua XUE">
-<meta property="article:tag" content="文章">
-<meta property="article:tag" content="论文">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814032821.jpg">
-
-<link rel="canonical" href="https://xuezx1999.github.io/2019/08/18/20190749%20-%20%E6%A0%A1%E5%9B%AD%E6%96%87%E5%8C%96%E5%88%9B%E6%84%8F%E8%A1%8D%E7%94%9F%E5%93%81%E5%BC%80%E5%8F%91%E6%80%9D%E8%B7%AF%E6%8E%A2%E6%9E%90%E2%80%94%E2%80%94%E4%BB%A5%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2%E4%B8%BA%E4%BE%8B%EF%BC%88%E5%88%8A%E8%BD%BD%E4%BA%8E%E3%80%8A%E9%94%A6%E7%BB%A3%E3%80%8B%E6%9C%9F%E5%88%8A2019%E5%B9%B407%E6%9C%9F%EF%BC%89/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>校园文化创意衍生品开发思路探析——以中国美术学院为例（刊载于《锦绣》期刊2019年07期） | 薛志翔</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  校园文化创意衍生品开发思路探析——以中国美术学院为例（刊载于《锦绣》期刊2019年07期） |    薛志翔的博客</title>
+  <meta name="description" content="欢迎访问薛志翔的博客。">
+  <!-- 标签页图标 -->
+  
+  <link rel="shortcut icon" href="/images/favicon-32x32-next.png" type="image/x-icon">
   
 
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- 动画库 -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/css/animate.css"/>
+  
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/css/white.css">
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?fa13ba1d23bff9018b49be1fb34e0dc8";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <!-- 代码高亮 -->
+  
+<meta name="generator" content="Hexo 5.0.2"></head>
 
 
+<body>
 
+<div class="menu-outer">
+    <div class="menu-inner">
+      <div class="menu-site-name  animate__animated  animate__fadeInUp">
+        <a href="/">
+          薛志翔的博客
+        </a>
+        
+      </div>
+      <div class="menu-group">
+        <ul class="menu-ul">
+        
+          <a href="/" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
+              HOME
+            </li>
+          </a>
+        
+          <a href="/archives" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
+              ARTICLES
+            </li>
+          </a>
+        
+        
+          <li class="menu-li animate__animated  animate__fadeInUp" id="sort">
+             CATEGORIES
+             <div class="categories-outer " id="sort-div">
+               <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BD%9C%E4%B8%9A/">作业</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a></li></ul>
+             </div>
+          </li>
+        
+        
+          <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
+            <i class="ri-menu-line"></i>
+          </li>
+        
+        </ul>
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+      </div>
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
     </div>
+</div>
+<div id="mobile-main" class="animate__animated  animate__fadeIn">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-site-name animate__animated  animate__fadeInUp">
+      <a href="/">
+        薛志翔的博客
+      </a>
+    </div>
+    <div class="mobile-menu-group" id="mobile-close">
+      <i class="ri-close-line"></i>
+    </div>
+
   </div>
 
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">薛志翔</h1>
-      <span class="logo-line-after"><i></i></span>
+  <div class="mobile-menu-div">
+  
+    <a href="/" class="mobile-nav-link">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <span>HOME</span>
+      </div>
     </a>
+  
+    <a href="/archives" class="mobile-nav-link">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <span>ARTICLES</span>
+      </div>
+    </a>
+  
+  
   </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-作业">
-
-    <a href="/categories/%E4%BD%9C%E4%B8%9A" rel="section"><i class="fa fa-cube fa-fw"></i>作业</a>
-
-  </li>
-        <li class="menu-item menu-item-项目">
-
-    <a href="/categories/%E9%A1%B9%E7%9B%AE" rel="section"><i class="fa fa-folder fa-fw"></i>项目</a>
-
-  </li>
-  </ul>
-</nav>
-
-
 
 
 </div>
-    </header>
 
+<div class="body-outer">
+  <div class="body-inner">
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xuezx1999.github.io/2019/08/18/20190749%20-%20%E6%A0%A1%E5%9B%AD%E6%96%87%E5%8C%96%E5%88%9B%E6%84%8F%E8%A1%8D%E7%94%9F%E5%93%81%E5%BC%80%E5%8F%91%E6%80%9D%E8%B7%AF%E6%8E%A2%E6%9E%90%E2%80%94%E2%80%94%E4%BB%A5%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2%E4%B8%BA%E4%BE%8B%EF%BC%88%E5%88%8A%E8%BD%BD%E4%BA%8E%E3%80%8A%E9%94%A6%E7%BB%A3%E3%80%8B%E6%9C%9F%E5%88%8A2019%E5%B9%B407%E6%9C%9F%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Joshua XUE">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="薛志翔">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          校园文化创意衍生品开发思路探析——以中国美术学院为例（刊载于《锦绣》期刊2019年07期）
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-08-18 23:57:00" itemprop="dateCreated datePublished" datetime="2019-08-18T23:57:00+08:00">2019-08-18</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+<article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      <div class="post-title animate__animated  animate__fadeInUp">校园文化创意衍生品开发思路探析——以中国美术学院为例（刊载于《锦绣》期刊2019年07期）</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">8月 18 2019</div>
       
+    </div>
+    <div class="post-content-inner">
+      <div class="post-content-inner-space">
+
+      </div>
+      <div class="post-content-main animate__animated  animate__fadeInUp">
+        <!-- top型目录 -->
+        
         <blockquote>
 <p><strong>基金项目：</strong>中国美术学院2019年大学生科技创新活动（暨新苗人才计划）<br><strong>项目名称：</strong>“大学望境”校园文化衍生品创意设计（专项课题）<br><strong>项目编号：</strong>T2019007<br><strong>发表情况：</strong>刊载于《锦绣》2019年07期（ISSN：1674-5140）<br><strong>龙源收录：</strong><br><a target="_blank" rel="noopener" href="http://www.qikan.com/articleinfo/sqwf20190749.html">http://www.qikan.com/articleinfo/sqwf20190749.html</a></p>
 </blockquote>
@@ -229,198 +132,221 @@
 <p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814000203.jpg"></p>
 <p><img src="https://gitee.com/xuezx1999/myblogpic/raw/master/img/20200814000210.jpg"></p>
 
-    </div>
+        <!-- 分类文章 -->
+        
+          <div class="post-categoris-bottom">
+            <div class="post-categoris-name">项目</div>
+            <ul>
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="me base">
+                  <a  href="/2019/08/18/20190749%20-%20%E6%A0%A1%E5%9B%AD%E6%96%87%E5%8C%96%E5%88%9B%E6%84%8F%E8%A1%8D%E7%94%9F%E5%93%81%E5%BC%80%E5%8F%91%E6%80%9D%E8%B7%AF%E6%8E%A2%E6%9E%90%E2%80%94%E2%80%94%E4%BB%A5%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2%E4%B8%BA%E4%BE%8B%EF%BC%88%E5%88%8A%E8%BD%BD%E4%BA%8E%E3%80%8A%E9%94%A6%E7%BB%A3%E3%80%8B%E6%9C%9F%E5%88%8A2019%E5%B9%B407%E6%9C%9F%EF%BC%89/" class="post-categoris-bottom-link">
+                  校园文化创意衍生品开发思路探析——以中国美术学院为例（刊载于《锦绣》期刊2019年07期）
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2019/11/27/20191127%20-%20%E6%8B%A5%E6%8A%B1%EF%BC%8C%E5%90%8C%E5%A3%B9%EF%BC%9B%E7%89%B5%E6%89%8B%EF%BC%8C%E6%9C%AA%E6%9D%A5/" class="post-categoris-bottom-link">
+                  拥抱，同壹；牵手，未来
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2019/12/17/20191217%20-%20%E6%BB%83%E6%B1%9F%E6%BA%90%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD%E5%BE%BD%E6%A0%87%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88%E3%80%8A%E6%B0%B5%E3%80%8B/" class="post-categoris-bottom-link">
+                  滃江源湿地公园徽标设计方案《氵》
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2020/02/28/20200218%20-%20%E3%80%8A%E5%B0%8F%E9%BB%84%E4%B9%A6%E3%80%8B/" class="post-categoris-bottom-link">
+                  《小黄书》
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2020/08/13/20200813%20-%20%E6%9C%A8%E6%B4%BB%E5%AD%97%E5%8D%B0%E5%88%B7%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8E%86%E5%8F%B2%E5%AD%98%E7%BB%AD%E4%B8%8E%E5%BD%93%E4%BB%A3%E4%BB%B7%E5%80%BC%EF%BC%88%E5%88%8A%E8%BD%BD%E4%BA%8E%E3%80%8A%E6%B5%81%E8%A1%8C%E8%89%B2%E3%80%8B%E6%9C%9F%E5%88%8A2020%E5%B9%B405%E6%9C%9F%EF%BC%89/" class="post-categoris-bottom-link">
+                  木活字印刷技术的历史存续与当代价值（刊载于《流行色》期刊2020年05期）
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2020/08/27/20200827%20-%20%E7%B2%89%E5%88%B7%E5%AE%8B/" class="post-categoris-bottom-link">
+                  粉刷宋
+                </a>
+                </li>
+              
+              
+            
+            
+            </ul>
 
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E6%96%87%E7%AB%A0/" rel="tag"># 文章</a>
-              <a href="/tags/%E8%AE%BA%E6%96%87/" rel="tag"># 论文</a>
           </div>
 
         
-
-
+      </div>
+      <div class="post-content-inner-space">
         
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/06/20/20190620%20-%20%E8%8F%9C%E5%B8%82%E5%9C%BA%E7%9A%84%E6%9B%B4%E5%A4%9A%E5%8F%AF%E8%83%BD%E6%80%A7/" rel="prev" title="菜市场的更多可能性">
-      <i class="fa fa-chevron-left"></i> 菜市场的更多可能性
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/09/16/20190916%20-%20%E6%8A%A4%E8%82%A4%E5%93%81%E5%AF%BC%E8%B4%AD%E5%B9%B3%E5%8F%B0%E9%9D%9E%E7%89%A9%E6%80%81%E8%AE%BE%E8%AE%A1/" rel="next" title="护肤品导购平台非物态设计">
-      护肤品导购平台非物态设计 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
+      </div>
+   </div>
+    <!-- 评论 -->
     
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
   </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Joshua XUE</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">31</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
+</article>
+  </div>
 </div>
 
 
 
-      </div>
+<!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+
+  <div class="footer-outer animate__animated  animate__fadeInUp">
+    <div class="footer-inner">
+    <div class="footer-text">
+    <p>Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
+    <div class="footer-contact">
+    <ul class="footer-ul">
         
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Joshua XUE</span>
+    </ul>
+    </div>
+    </div>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
-
-        
 
 
 
 
 
 
+<script src="/js/white.js"></script>
 
 
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
 
 </body>
 </html>
