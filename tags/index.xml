@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tags on XUE ZHIXIANG</title>
+    <link>https://xuezhixiang.fun/tags/</link>
+    <description>Recent content in tags on XUE ZHIXIANG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xuezhixiang.fun/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>archive</title>
+      <link>https://xuezhixiang.fun/tags/archive/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://xuezhixiang.fun/tags/archive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>insight</title>
+      <link>https://xuezhixiang.fun/tags/insight/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://xuezhixiang.fun/tags/insight/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>work</title>
+      <link>https://xuezhixiang.fun/tags/work/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://xuezhixiang.fun/tags/work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>thesis</title>
+      <link>https://xuezhixiang.fun/tags/thesis/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://xuezhixiang.fun/tags/thesis/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
